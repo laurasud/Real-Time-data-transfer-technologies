@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SSE</title>
+	</head>
+	<body>
+		 <div id="content"></div>
+		 <script>
+			var sse = new EventSource("http://localhost:3001");
+			sse.onmessage = function (event) {
+				console.log(event.data);
+				var div = document.getElementById('content');;
+				div.innerHTML += event.data + "</br>";
+			};
+		 </script>
+	</body>
+</html>
