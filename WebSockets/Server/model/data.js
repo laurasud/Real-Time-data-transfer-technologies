@@ -2,8 +2,8 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let dataSchema = new Schema({
-    domain: {type: String, required: true,},
-    userID: {type: String, required: true,},
+    url: {type: String, required: true,},
+    IP: {type: String, required: true,},
     time: {type: Date, required: true},
     mousepositionX: {type: Number, required: true},
     mousepositionY: {type: Number, required: true},

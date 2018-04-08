@@ -25,8 +25,8 @@ wsServer.on('request', function(request) {
     connection.on('message', function(message) {
         let obj = JSON.parse(message.utf8Data);
         let data = new Data({
-            domain: obj.domain || "No data",
-            userID: obj.userID || "No data",
+            url: obj.url|| "No data",
+            IP: obj.IP || "No data",
             time:  obj.time || "2000.01.01",
             mousepositionX: obj.mousepositionX || 0,
             mousepositionY: obj.mousepositionY || 0,

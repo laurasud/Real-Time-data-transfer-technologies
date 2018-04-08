@@ -6,28 +6,24 @@ $(function () {
 	var data = {};
 	var url = document.URL;
 	var ip; //ip address
-	var mousemove; //mousemove event
 
 	$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
 	  ip = data.geobytesremoteip
 	}); //is serverio
 	
-	document.addEventListener("mousemove", mousemove);
-	
-	function mousemove(event){ //count
+
+	connection.onopen = function () {
+		console.log("connection opened");
+		window.addEventListener("mousemove", function(event){ //count
 		data = {
-			"domain": url,
-			"userID": ip,
+			"url": url,
+			"IP": ip,
 			"time": Date(),
 			"mousepositionX": event.pageX,
 			"mousepositionY": event.pageY
 		}
 		connection.send(JSON.stringify(data));	//pasidaryti masyva	
-	}; //patikrinti ant narsykliu
-  
-	connection.onopen = function () {
-		console.log("connection opened");
-		mousemove();
+	});
 	 };
 
 	connection.onerror = function (error) {
