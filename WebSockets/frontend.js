@@ -5,19 +5,14 @@ $(function () {
 	var connection = new WebSocket('ws://localhost:3000'); //sinchroninis ar asinchroninis
 	var data = {};
 	var url = document.URL;
-	var ip; //ip address
-
-	$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-	  ip = data.geobytesremoteip
-	}); //is serverio
+	var mousemove; //mousemove event
 	
 
 	connection.onopen = function () {
 		console.log("connection opened");
-		window.addEventListener("mousemove", function(event){ //count
+		mousemove = window.addEventListener("mousemove", function(event){ //count
 		data = {
 			"url": url,
-			"IP": ip,
 			"time": Date(),
 			"mousepositionX": event.pageX,
 			"mousepositionY": event.pageY

@@ -4,6 +4,7 @@ const log = require('simple-node-logger').createSimpleFileLogger('error.log');
 let Data = require('./model/data');
 let sucess = 0;
 let error = 0;
+let ip;
 let server = http.createServer(function(request, response) {
 });
 
@@ -24,12 +25,13 @@ wsServer = new WebSocketServer({
 
 wsServer.on('request', function(request) {
     let connection = request.accept(null, request.origin);
-    log.info('testing logger ', new Date().toJSON())
+    //log.info('testing logger ', new Date().toJSON());
     connection.on('message', function(message) {
+        ip = connection.remoteAddress;
         let obj = JSON.parse(message.utf8Data);
         let data = new Data({
             url: obj.url|| "No data",
-            IP: obj.IP || "No data",
+            IP: ip || "No data",
             time:  obj.time || "2000.01.01",
             mousepositionX: obj.mousepositionX || 0,
             mousepositionY: obj.mousepositionY || 0,
@@ -37,12 +39,10 @@ wsServer.on('request', function(request) {
         });
         data.save(function (err){
             if (err){
-                //console.log('ERROR ADDING DATA' + err)
                 error++;
                 log.info(err, ' accepted at ', new Date().toJSON());
             }
             else {
-               // console.log('SUCCESS ADDING DATA');
                 sucess++;
             }
             process.stdout.write('SUCCESS ADDING DATA: ' + sucess + '    ERROR ADDING DATA: ' + error + '\033[0G' );
