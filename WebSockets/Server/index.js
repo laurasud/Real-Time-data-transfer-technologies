@@ -31,17 +31,17 @@ wsServer.on('request', function(request) {
         ip = connection.remoteAddress;
         let obj = JSON.parse(message.utf8Data);
         obj.forEach(function (item){
-            console.log ("x: " + item.mousepositionX + " y:" + item.mousepositionY, item.url, item.time);
+            console.log ("x: " + item.mousepositionX + " y:" + item.mousepositionY, item.count);
             let data = new Data({
                 url: item.url,
                 IP: ip,
                 time:  item.time,
                 mousepositionX: item.mousepositionX,
                 mousepositionY: item.mousepositionY,
-                count: 0
+                count: item.count
             });
             data.save(function (err){
-                if (err || data.mousepositionY=== null|| data.mousepositionX=== null || data.time=== null || data.url=== null || data.IP=== null || data.count=== null){
+                if (err || data.mousepositionY === null|| data.mousepositionX === null || data.time === null || data.url === null || data.IP === null || data.count === null){
                     error++;
                     log.info(err, ' accepted at ', new Date().toJSON());
                 }
