@@ -5,6 +5,7 @@ let Data = require('./model/data');
 let sucess = 0;
 let error = 0;
 let ip;
+
 let server = http.createServer(function(request, response) {
 });
 
@@ -29,25 +30,27 @@ wsServer.on('request', function(request) {
     connection.on('message', function(message) {
         ip = connection.remoteAddress;
         let obj = JSON.parse(message.utf8Data);
-        let data = new Data({
-            url: obj.url|| "No data",
-            IP: ip || "No data",
-            time:  obj.time || "2000.01.01",
-            mousepositionX: obj.mousepositionX || 0,
-            mousepositionY: obj.mousepositionY || 0,
-            count: 0
+        obj.forEach(function (item){
+            console.log ("x: " + item.mousepositionX + " y:" + item.mousepositionY, item.url, item.time);
+            let data = new Data({
+                url: item.url,
+                IP: ip,
+                time:  item.time,
+                mousepositionX: item.mousepositionX,
+                mousepositionY: item.mousepositionY,
+                count: 0
+            });
+            data.save(function (err){
+                if (err || data.mousepositionY=== null|| data.mousepositionX=== null || data.time=== null || data.url=== null || data.IP=== null || data.count=== null){
+                    error++;
+                    log.info(err, ' accepted at ', new Date().toJSON());
+                }
+                else {
+                    sucess++;
+                }
+                process.stdout.write('SUCCESS ADDING DATA: ' + sucess + '    ERROR ADDING DATA: ' + error + '\033[0G' );
+            })
         });
-        data.save(function (err){
-            if (err){
-                error++;
-                log.info(err, ' accepted at ', new Date().toJSON());
-            }
-            else {
-                sucess++;
-            }
-            process.stdout.write('SUCCESS ADDING DATA: ' + sucess + '    ERROR ADDING DATA: ' + error + '\033[0G' );
-        })
-
     });
 
     connection.on('close', function(connection) {
