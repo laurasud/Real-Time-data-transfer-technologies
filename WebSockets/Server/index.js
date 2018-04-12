@@ -1,10 +1,21 @@
 let WebSocketServer = require('websocket').server;
+let express = require('express');
+let app = express();
+let jsfile = 'script/';
 let http = require('http');
 const log = require('simple-node-logger').createSimpleFileLogger('error.log');
 let Data = require('./model/data');
 let sucess = 0;
 let error = 0;
 let ip;
+
+app.get('/script', function (req, res, err) {
+   res.sendfile(jsfile + 'frontend.js');
+});
+
+app.listen('3001', function() {
+    console.log("Express listening on port 3001");
+});
 
 let server = http.createServer(function(request, response) {
 });
@@ -14,7 +25,6 @@ let mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/realtimedata');
 
 mongoose.Promise = global.Promise;
-
 
 server.listen('3000', function() {
     console.log("App listening on port 3000");

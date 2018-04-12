@@ -4659,3 +4659,19 @@ ValidationError: Data validation failed: url: Path `url` is required., time: Pat
     at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
     at _combinedTickCallback (internal/process/next_tick.js:73:7)
     at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-11T12:38:15.033Z 
+13:44:03.566 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-12T10:44:03.565Z 
+13:48:18.461 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-12T10:48:18.461Z 

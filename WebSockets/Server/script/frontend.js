@@ -1,4 +1,4 @@
-$(function frontend() {
+$(function() {
 	start();
 	function start(){
 		
