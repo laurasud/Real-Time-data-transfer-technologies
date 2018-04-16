@@ -2,6 +2,7 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let dataSchema = new Schema({
+    _id: {type: Schema.Types.ObjectId, ref: 'User' },
     url: {type: String, required: true,},
     IP: {type: String, required: true,},
     time: {type: Date, required: true},
