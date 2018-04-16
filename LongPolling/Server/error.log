@@ -1,0 +1,8 @@
+20:33:42.898 INFO  E11000 duplicate key error collection: realtimedata.user2 index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.user2 index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\LongPolling\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\LongPolling\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\LongPolling\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\LongPolling\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-16T17:33:42.898Z 

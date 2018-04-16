@@ -2,7 +2,7 @@ let WebSocketServer = require('websocket').server;
 let http = require('http');
 const log = require('simple-node-logger').createSimpleFileLogger('error.log');
 let Data = require('./model/data');
-let User = require('./model/user')
+let User = require('./model/user');
 let requestIP = require('request-ip');
 let bodyParser = require('body-parser');
 let cors = require('cors');
@@ -69,7 +69,7 @@ wsServer.on('request', function(request) {
         let ip = connection.remoteAddress;
         let obj = JSON.parse(message.utf8Data);
         obj.forEach(function (item){
-            console.log ("x: " + item.mousepositionX + " y:" + item.mousepositionY, item.count);
+           // console.log ("x: " + item.mousepositionX + " y:" + item.mousepositionY, item.count);
             let data = new Data({
                 _id: new mongoose.Types.ObjectId(),
                 url: item.url,

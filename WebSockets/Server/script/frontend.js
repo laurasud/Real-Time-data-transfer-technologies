@@ -16,7 +16,7 @@ $(function() {
 		connection.onopen = function () {
 			conn=true;
 			console.log("connection opened");
-			mousemove = window.addEventListener("mousemove", function(event){ //count
+			mousemove = window.addEventListener("mousemove", function(event){
 				if (conn == true){
 					data = {
 						"url": url,
