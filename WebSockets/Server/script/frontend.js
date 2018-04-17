@@ -8,7 +8,7 @@ $(function() {
 		var connection = new WebSocket('ws://localhost:3000');
 		
 		var data = {};
-		var send = [{}];
+		var send = [];
 		var url = document.URL;
 		var mousemove; //mousemove event
 		var conn;
@@ -35,7 +35,7 @@ $(function() {
 			var unique = true;
 			if (send.length === 200){
 				connection.send(JSON.stringify(send));
-				send = [{}];
+				send = [];
 			} else{
 				for (var i=1; i<send.length; i++){
 					if(send[i].mousepositionX === data.mousepositionX && send[i].mousepositionY === data.mousepositionY ){
