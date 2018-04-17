@@ -26,9 +26,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
 
 app.get('/script', function (req, res) {
+    let useragent = req.get('User-Agent');
+    if (useragent === undefined){
+        res.send(500, 'Something went wrong');
+    }
    res.sendfile(jsfile + 'frontend.js');
    let user_domain = req.get('host');
-   console.log ("hhuh" + user_domain);
    let user_ip = requestIP.getClientIp(req);
    let user = new User ({
        domain: user_domain,

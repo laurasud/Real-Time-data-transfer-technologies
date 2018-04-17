@@ -26,6 +26,10 @@ mongoose.connect('mongodb://localhost/realtimedata');
 mongoose.Promise = global.Promise;
 
 app.get('/script', function (req, res) {
+    let useragent = req.get('User-Agent');
+    if (useragent === undefined){
+        res.send(500, 'Something went wrong');
+    }
     res.sendfile(jsfile + 'frontend_lp.js');
     let user_domain = req.get('host');
     //console.log ("hhuh" + user_domain);
