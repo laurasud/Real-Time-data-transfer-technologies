@@ -25997,3 +25997,195 @@ ValidationError: Data validation failed: url: Path `url` is required., time: Pat
     at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
     at _combinedTickCallback (internal/process/next_tick.js:73:7)
     at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-16T10:15:12.975Z 
+07:23:02.365 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:23:02.365Z 
+07:23:16.464 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:23:16.464Z 
+07:24:01.898 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:01.898Z 
+07:24:38.383 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:38.383Z 
+07:24:41.870 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:41.870Z 
+07:24:47.278 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:47.278Z 
+07:24:49.994 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:49.994Z 
+07:24:54.132 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:24:54.132Z 
+07:25:05.460 INFO  Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+ValidationError: Data validation failed: url: Path `url` is required., time: Path `time` is required., mousepositionX: Path `mousepositionX` is required., mousepositionY: Path `mousepositionY` is required., count: Path `count` is required.
+    at MongooseError.ValidationError (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\error\validation.js:27:11)
+    at model.Document.invalidate (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1725:32)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\document.js:1597:17
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongoose\lib\schematype.js:785:9
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T04:25:05.460Z 
+10:21:24.010 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:21:24.010Z 
+10:24:27.722 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:24:27.721Z 
+10:24:54.116 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:24:54.116Z 
+10:26:17.968 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:26:17.968Z 
+10:31:30.630 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:31:30.630Z 
+10:31:56.061 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:31:56.061Z 
+10:36:59.225 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:36:59.225Z 
+10:38:59.480 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:38:59.480Z 
+10:39:54.470 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:39:54.470Z 
+10:40:14.870 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:40:14.870Z 
+10:41:16.302 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:41:16.302Z 
+10:50:33.352 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:50:33.351Z 
+10:54:49.760 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:54:49.760Z 
+10:58:35.444 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:58:35.444Z 
+10:59:45.551 INFO  E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+BulkWriteError: E11000 duplicate key error collection: realtimedata.users index: ip_1 dup key: { : "::1" }
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:535:15
+    at handleCallback (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\utils.js:128:55)
+    at resultHandler (C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb\lib\bulk\unordered.js:456:5)
+    at C:\Users\LauraPC\Desktop\BD\Real-Time-data-transfer-technologies\WebSockets\Server\node_modules\mongodb-core\lib\connection\pool.js:541:18
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) accepted at 2018-04-17T07:59:45.550Z 

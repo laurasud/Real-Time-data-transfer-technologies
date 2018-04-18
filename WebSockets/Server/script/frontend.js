@@ -1,7 +1,6 @@
 $(function() {
 	start();
 	function start(){
-		
 		// if user is running mozilla then use it's built-in WebSocket
 		window.WebSocket = window.WebSocket || window.MozWebSocket;
 
@@ -54,12 +53,14 @@ $(function() {
 
 		connection.onerror = function (error) {
 			document.removeEventListener("mousemove", mousemove);
+			console.log("connectio error");
 			setTimeout(function(){start()}, 5000); //reconnect every 5sec
 		};
 		
 		connection.onclose = function () {
 			document.removeEventListener("mousemove", mousemove);
 			conn = false;
+			console.log("connection closed");
 			setTimeout(function(){start()}, 5000); //reconnect every 5sec
 		}
 	}

@@ -1,0 +1,11 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Testing my SQL\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b[C\u001bySQL database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
